@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*display formRow div element as a horizontal flexbox*/
+div.formRow {
+	display: flex;	
+	margin: 7px 0px;
+	flex-flow: row wrap;
+	margin-bottom: 5px;
+	padding: 5px;
+	
+}
+
+/*allow growth and shrink*/
+div.formRow > * {
+	flex: 1 1 150px;
+}
+
+.formRow label { 
+	width: 50px; 
+	font-weight: bold; 
+	flex-shrink: 0; }
+	
+/*Align check boxes on the screen */	
+div.checkboxRow {
+    font-weight: bold; 
+	display: flex; 
+	align-items: center;    
+	width: 100%;           
+	max-width: 400px;
+}
+
+
+/*display order form as a flexbox*/
+form#order {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+form#order > fieldset {
+	background-color: rgb(241, 232, 181);
+	border-radius: 20px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+legend {
+	background-color: rgb(179, 20, 25);
+	color: white;
+	padding: 5px;
+}
+
+/* Format textarea*/
+textarea {
+	margin-top: 10px;
+	height: 50px;
+	width: 95%;
+	font-weight: bold;
+}
+
+/* fix size of spinner */
+div.formRow > input#cakeNum {
+	flex: 0 0 10px;
+}
+
+/* Style Button */
+div.buttons {
+	text-align: center;
+	width: 100%;
+}
+input[type='submit'], input[type='reset'] {
+	font-size: 1.0em;
+	padding: 5px;
+	margin: 15px;
+}
+
+/* Style to set pseudo class 'focus' for name input box */
+input:focus, textarea:focus {
+	background-color: rgb(255, 255, 0);
+}
+
+/* Style to set pseudo class 'focus' for name input box  when invalid data*/
+input#name:focus:invalid {
+	background-color: rgb(255, 0, 0);
+}
+
+/* Center current date/time */
+h5 {
+	text-align: center;
+}
+	
+
+
+
+	
+
+	

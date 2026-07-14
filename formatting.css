@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+html, body {
+	font-size: 16px;
+
+}
+body article h1 {
+   font-size: 2.0em;
+}
+html {
+	background-color: rgba(217,194,146, 1.0);  /*background formatting */
+	margin: 0px auto;
+}
+
+dl {
+	margin-left: 2%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif; 
+}
+/*Display element as a block*/
+dt {
+	display: block;
+	margin: 0;
+	text-indent: 0;
+	font-weight: bold; /*format text */	
+}
+dd {
+	display: block;
+	margin: 0 0 3% 3%;
+	text-indent: 0;
+}
+
+nav ul li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 0.8em;
+}
+
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8%;
+	background-color: #FFDB58
+}
+/*Pseudo classes for pypertext links */
+nav ul li a:visited {
+	color: #8B0000;            /* Changes text color */
+    border-bottom: 2px solid #ff6600; /* Adds an underline indicator */
+    font-weight: bold;
+}
+nav ul li a:hover {
+	background-color: #222;
+	color: white;
+}
+nav ul li a:focus {
+	outline: thin dotted;
+}
+nav ul li a:hover, nav ul li a:active {
+	color: #ff6600;            /* Changes text color */
+    border-bottom: 2px solid #ff6600; /* Adds an underline indicator */
+    font-weight: bold;
+}
+nav a {
+	width: 32%;
+	height: auto;
+	float: left;
+	clear: none;
+	overflow: visible;
+	margin-bottom: 0px;
+}
+header h1 {
+   font-size: 2.2em;
+}
+
+body {
+	background-color: #D2B48C; 
+	
+}
+article p#order {
+  font-size: 10em; 
+  font-weight: bold;
+  text-align: center;
+}
+dt {
+	text-align: center;
+}
+.menu-header{
+	text-align: center;
+	font-size: 4em; 
+}
+h2 {
+	text-align: center;
+}
+
+video {
+  max-width: 100%; /* Makes the video responsive on smaller screens */
+  height: auto;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Ensures text is centered within its block */
+}
+
+.home-content p {
+  max-width: 800px; /* Prevents text lines from getting too wide to read */
+  margin-bottom: 20px;
+  background-color: #E5D3B3;  
+  border: 1px solid #ccc;      
+  padding: 15px; 
+}
+.contact {	
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+	flex-direction: column;
+	font-weight: bold;
+	align-items: center;
+}
+
+/* Formatting for countdown */
+.timer-container {
+            text-align: center;
+}
+
+.timer-container h1 {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+		color: #00adb5;
+}
+
+ /* Flexbox grid layout for the countdown */
+.countdown {
+		display: flex;
+		gap: 15px;
+        justify-content: center;
+}
+
+.time-box {
+        background-color: #222831;
+        padding: 15px 25px;
+        border-radius: 8px;
+        min-width: 80px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.time-box span {
+        display: block;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #eeeeee;
+}
+
+.time-box .label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #00adb5;
+        letter-spacing: 1px;
+        margin-top: 5px;
+}
