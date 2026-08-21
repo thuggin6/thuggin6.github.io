@@ -81,3 +81,7 @@ blockquote{
 ul ul {
     list-style-type: circle;
 }
+
+body {
+    background-color: #EAD2A8; 
+}
