@@ -1,8 +1,12 @@
 @charset "utf-8";
 
-h2 {
+h1 {
 	text-align: center;
     color: #F54927;
+}
+
+h2 {
+    text-align: center;
 }
 
 nav ul li {
