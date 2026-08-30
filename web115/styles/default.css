@@ -8,34 +8,45 @@ h1 {
 h2 {
     text-align: center;
 }
-
+h1,h2,h5,h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul {
+  display: table;
+  width: 100%;
+  border-collapse: collapse; /* Moves here to control cell spacing */
+}
 nav ul li {
 	display: table-cell;
 	width: 30%;
 	text-align: center;
-	margin-right: 2%;
-	border: none;
-	border-collapse: collapse;
+	border: none;	
     border-right: 1px solid #4169E1; 
-    padding: 0 15px;
 }
 
 nav ul li:last-child {
   border-right: none; }
 
+nav a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 100;
+}
+ 
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   text-align: left; 
   font-weight: bold;
+  
 }
 
 footer {
 	text-align: center;
 	margin-top: 4%;	
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-family: Verdana, Helvetica;
 	clear: both;
 	padding-bottom: 20px;	  
     margin-top: auto; /* push footer to bottom of page */
@@ -44,7 +55,9 @@ footer {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Takes full viewport height */
+  min-height: 100vh;  /*Takes full viewport height */
+  background-color: lightgrey; 
+  font-family: Verdana, Helvetica;
 }
 
 img {
@@ -76,12 +89,9 @@ blockquote{
     align-items: center;
     text-align: center;
     margin-top: -15px;
+    
 }
 
 ul ul {
     list-style-type: circle;
-}
-
-body {
-    background-color: lightgrey; 
 }
