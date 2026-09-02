@@ -63,6 +63,14 @@ body {
   font-family: Verdana, Helvetica;
 }
 
+.header_logo {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle; /* Aligns image with the text middle */
+  margin-right: 10px; 
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -100,6 +108,15 @@ ul ul {
     flex-direction: column;
   }
   
+}
+
+/* Unvisited link */
+a:link {
+  color: #3498db; 
+
+/*Visited link */
+a:visited {
+  color: #9b59b6; 
 }
 
 
