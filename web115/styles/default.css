@@ -61,6 +61,8 @@ body {
   min-height: 100vh;  /*Takes full viewport height */
   background-color: lightgrey; 
   font-family: Verdana, Helvetica;
+  max-width: 900px ;
+  margin: 0 auto;
 }
 
 .header_logo {

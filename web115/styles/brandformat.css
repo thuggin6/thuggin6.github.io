@@ -43,6 +43,19 @@ dd:nth-of-type(odd){
   /*align-items: center;*/
   object-fit: contain;}
 
+.my-grid2 {
+  display: grid;
+  grid-template-columns: 1fr; /* Forces all items into one vertical column */
+  gap: 16px;                  /* Optional: Adds space between the stacked images */
+}
+
+.my-grid2 img {
+  width: 100%; /* Ensures image fits the container */
+  height: 200px;
+  /*align-items: center;*/
+  object-fit: cover;}
+
+
   
 .my-grid > div {
     margin-bottom: 30px; /* Adjust the pixels to get the desired spacing */
