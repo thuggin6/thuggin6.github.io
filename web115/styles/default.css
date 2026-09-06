@@ -113,6 +113,7 @@ ul ul {
 /* Unvisited link */
 a:link {
   color: #3498db; 
+}
 
 /*Visited link */
 a:visited {
