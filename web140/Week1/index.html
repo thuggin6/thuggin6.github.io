@@ -4,64 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>City Of Charlotte Quiz</title>
 </head>
 
 <body>
     <h2>Created By: Teresa Huggins</h2>
     <h1>City Of Charlotte Quiz</h1>
-    <form>
+    <form id="quizForm">
         <p>1.  What is Charlotte's nickname?</p>
-        <input type="radio" id="num1a" name="num1" value="Windy City">
+        <input type="radio" id="num1a" name="num1"  data-correct-answer="false" value="Windy City">
         <label for="num1a">Windy City</label><br>
-        <input type="radio" id="num1b" name="num1" value="Queen City">
+        <input type="radio" id="num1b" name="num1"  data-correct-answer="true" value="Queen City">
         <label for="num1b">Queen City</label><br>  
-        <input type="radio" id="num1c" name="num1" value="Big Apple">
+        <input type="radio" id="num1c" name="num1"  data-correct-answer="false" value="Big Apple">
         <label for="num1c">Big Apple</label><br>
-        <input type="radio" id="num1d" name="num1" value="Sin City">
+        <input type="radio" id="num1d" name="num1"  data-correct-answer="false" value="Sin City">
         <label for="num1d">Sin City</label><br><br>
+        <div id="result1"></div>
 
         <p>2.  What county is Charlotte located?</p>
-        <input type="radio" id="num2a" name="num2" value="Mecklenburg County">
+        <input type="radio" id="num2a" name="num2" data-correct-answer="true" value="Mecklenburg County">
         <label for="num2a">Mecklenburg County</label><br>
-        <input type="radio" id="num2b" name="num2" value="Cabarrus County">
+        <input type="radio" id="num2b" name="num2"  data-correct-answer="false" value="Cabarrus County">
         <label for="num2b">Cabarrus County</label><br>  
-        <input type="radio" id="num2c" name="num2" value="Wake County">
+        <input type="radio" id="num2c" name="num2"  data-correct-answer="false" value="Wake County">
         <label for="num2c">Wake County</label><br>
-        <input type="radio" id="num2d" name="num2" value="Union County">
+        <input type="radio" id="num2d" name="num2"  data-correct-answer="false" value="Union County">
         <label for="num2d">Union County</label><br><br>
+        <div id="result2"></div>
 
         <p>3.  Which major river flows near the Charlotte region?</p>
-        <input type="radio" id="num3a" name="num3" value="Broad River">
+        <input type="radio" id="num3a" name="num3"  data-correct-answer="false" value="Broad River">
         <label for="num3a">Broad River</label><br>
-        <input type="radio" id="num1b" name="num3" value="Santee Cooper River">
+        <input type="radio" id="num3b" name="num3"  data-correct-answer="false" value="Santee Cooper River">
         <label for="num3b">Santee Cooper River</label><br>  
-        <input type="radio" id="num1c" name="num3" value="Mississippi River">
+        <input type="radio" id="num3c" name="num3"  data-correct-answer="false" value="Mississippi River">
         <label for="num3c">Mississippi River</label><br>
-        <input type="radio" id="num1d" name="num3" value="Catawba River">
+        <input type="radio" id="num3d" name="num3"  data-correct-answer="true" value="Catawba River">
         <label for="num3d">Catawba River</label><br><br>
+        <div id="result3"></div>
 
         <p>4.  What is the name of the NBA Team based in Charlotee?</p>
-        <input type="radio" id="num4a" name="num4" value="Chicago Bulls">
+        <input type="radio" id="num4a" name="num4"  data-correct-answer="false" value="Chicago Bulls">
         <label for="num4a">Chicago Bulls</label><br>
-        <input type="radio" id="num4b" name="num4" value="San Antonio Spurs">
+        <input type="radio" id="num4b" name="num4"  data-correct-answer="false" value="San Antonio Spurs">
         <label for="num4b">San Antonio Spurs</label><br>  
-        <input type="radio" id="num4c" name="num4" value="Charlotte Hornets">
+        <input type="radio" id="num4c" name="num4"  data-correct-answer="true" value="Charlotte Hornets">
         <label for="num4c">Charlotte Hornets</label><br>
-        <input type="radio" id="num4d" name="num4" value="Carolina Panthers">
+        <input type="radio" id="num4d" name="num4"  data-correct-answer="false" value="Carolina Panthers">
         <label for="num4d">Carolina Panthers</label><br><br>
+        <div id="result4"></div>
 
         <p>5.  What Amusement Park is located on the North Carolina/South Carolina border?</p>
-        <input type="radio" id="num5a" name="num5" value="Six Flags">
+        <input type="radio" id="num5a" name="num5"  data-correct-answer="false" value="Six Flags">
         <label for="num5a">Six Flags</label><br>
-        <input type="radio" id="num5b" name="num5" value="Queen City">
+        <input type="radio" id="num5b" name="num5"  data-correct-answer="false" value="Queen City">
         <label for="num5b">Busch Gardens</label><br>  
-        <input type="radio" id="num5c" name="num5" value="Universal Studios">
+        <input type="radio" id="num5c" name="num5"  data-correct-answer="false" value="Universal Studios">
         <label for="num5c">Universal Studios</label><br>
-        <input type="radio" id="num5d" name="num5" value="Carowinds">
+        <input type="radio" id="num5d" name="num5"  data-correct-answer="true" value="Carowinds">
         <label for="num5d">Carowinds</label><br><br>
+        <div id="result5"></div>
+        <br>
+        <button type="button" class="form-btn" onclick="showScore()">Show My Score</button>
+        
     </form>
+     <div id="scoreValue"></div>
 </body>
-
-</html
+</html>

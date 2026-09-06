@@ -29,3 +29,16 @@ h2 {
 input, label {
     background-color: coral;
 }
+
+#scoreValue {
+    max-width: 400px; 
+    margin: 0 auto; 
+    background-color: yellow;
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+}
+
+.form-btn{
+    background-color: red;
+    
+}
