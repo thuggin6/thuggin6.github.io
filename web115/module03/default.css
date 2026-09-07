@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+h1 {
+	text-align: center;
+    color: #F54927;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+h5,h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul {
+  display: table;
+  width: 100%;
+  border-collapse: collapse; /* Moves here to control cell spacing */
+}
+nav ul li {
+	display: table-cell;
+	text-align: center;
+	border: none;	
+    border-right: 1px solid #4169E1; 
+}
+
+nav ul li:last-child {
+  border-right: none; }
+
+nav a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 100;
+}
+ 
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  text-align: left; 
+  font-weight: bold;
+  
+}
+
+footer {
+	text-align: center;
+	margin-top: 4%;	
+	font-family: Verdana, Helvetica;
+	clear: both;
+	padding-bottom: 20px;	  
+    margin-top: auto; /* push footer to bottom of page */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /*Takes full viewport height */
+  background-color: lightgrey; 
+  font-family: Verdana, Helvetica;
+  max-width: 900px ;
+  margin: 0 auto;
+}
+
+.header_logo {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle; /* Aligns image with the text middle */
+  margin-right: 10px; 
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+dd {
+	text-align: center;
+    font-weight: bold;
+    color: navy;
+}
+
+.intro-content p{
+    text-align: left;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+    
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  
+}
+
+/* Unvisited link */
+a:link {
+  color: #3498db; 
+}
+
+/*Visited link */
+a:visited {
+  color: #9b59b6; 
+}
+
+
