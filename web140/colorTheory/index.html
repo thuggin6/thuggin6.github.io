@@ -1,1 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Theory Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+						if (document.documentElement.hasAttribute('lang')) {
+							document.documentElement.dataset.customLang = '';
+							return;
+						}
+						document.documentElement.setAttribute('lang', 'en-us');
+					});</script><script>document.addEventListener('DOMContentLoaded', function() {
+						if (document.head.querySelector('title')) return;
+						var handleAppendTitle = function(evt) {
+							if (!evt || !evt.data) return;
+
+							try {
+								var data = JSON.parse(evt.data);
+								if (data.handler !== 'd2l.iframe.requestPageTitle' || !data.pageTitle) return;
+
+								window.removeEventListener('message', handleAppendTitle, false);
+
+								var titleElm = document.createElement('title');
+								titleElm.textContent = data.pageTitle;
+								document.head.appendChild(titleElm);
+							} catch (e) {}
+						};
+
+						window.addEventListener('message', handleAppendTitle, false);
+						window.parent.postMessage(JSON.stringify({ handler: 'd2l.iframe.requestPageTitle' }), '*');
+					});</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					let params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000;
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					const el = document.getElementsByTagName( 'iframe' );
+					for ( let i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+
+							console.info( 'Setting iFrame height to ' + params.height );
+
+							if( el[i].getAttribute('lockwidth') !== 'true'){
+								el[i].style.width = '100%';
+								console.info( 'Setting iFrame width to 100%' );
+							}
+						}
+					}
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/embeds.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/mathjax.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+			if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+				document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+					elm.setAttribute('style', 'display: block; height: 0.5rem;');
+				});
+
+				document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+					const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+					elm.replaceWith(mrow);
+				});
+
+				window.D2L.MathJax.loadMathJax({"renderLatex":true,"outputScale":1.5,"enableMML3Support":false});
+			}
+		});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/prism.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script>document.addEventListener('DOMContentLoaded', async () => {
+			document.querySelectorAll('iframe[src*="quickLink.d2l"][src*="type=lti"]').forEach(iframe => {
+				iframe.style.borderStyle = 'none';
+			});
+		});</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/context-provider-host-factory.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
+			document.documentElement.setAttribute('data-mathjax-context', '{"renderLatex":true,"outputScale":1.5,"enableMML3Support":false}');
+			window.D2L.ContextProvider.createContextProviderHost();
+		});</script><script>
+					if (window.frameElement !== null && !document.documentElement.hasAttribute('data-oslo')) {
+						const osloSettings = {"batch":"/d2l/api/oslo/batch?languageId=1","collection":"/d2l/api/oslo/collection?languageId=1","version":"W/\"20.26.8.29533.638396676610101010\""};
+						document.documentElement.setAttribute('data-oslo', JSON.stringify(osloSettings));
+					}
+				</script><script src="https://s.brightspace.com/lib/bsi/2026.8.278/unbundled/creator.js" type="module"></script><script>document.addEventListener('DOMContentLoaded', async () => {
+			const activities = [];
+			const practices = [];
+			const allPractices = document.querySelectorAll('.d2l-practice');
+			const elements = document.querySelectorAll('.d2l-element');
+			let layouts = [...document.querySelectorAll('.d2l-cplus-layout')];
+			const tables = document.querySelectorAll('table');
+			const contentStylerStyleLinks = document.querySelectorAll('head > link[href="https://templates.lcs.brightspace.com/lib/assets/css/styles.min.css"]');
+			const contentStylerOverides = document.querySelectorAll('head > link[href^="/d2l/le/contentstyler/"][data-override="override"]');
+
+			layouts = layouts.filter((layout) => layout.closest('.d2l-element.mceNonEditable') === null);
+
+			for (const practice of allPractices) {
+				const activityContainer = practice.hasAttribute('data-d2l-activity-href');
+				if (activityContainer) {
+					activities.push(practice);
+				}
+				else {
+					practices.push(practice);
+				}
+			}
+
+			if (layouts.length > 0) {
+				window.D2L.Creator.convertLayouts(layouts);
+			}
+			if (elements.length > 0) {
+				window.D2L.Creator.convertElements(elements, 6606, '/content/', true);
+			}
+			if (activities.length > 0) {
+				window.D2L.Creator.convertPracticeActivities(activities, 6606, '/content/');
+			}
+			if (practices.length > 0) {
+				window.D2L.Creator.convertPractices(practices, 6606, '/content/');
+			}
+			if (contentStylerStyleLinks.length > 0 && contentStylerOverides.length > 0 && tables.length > 0) {
+				window.D2L.Creator.wrapTables(tables);
+			}
+		});</script><script>function lti_launch( vars, target ) {
+					var query = '';
+					var new_tab = false;
+
+					for(var key in vars) {
+						if(query.length == 0) {
+							query += '?' + key + '=' + encodeURIComponent(vars[key]);
+						}
+						else {
+							query += '&' + key + '=' + encodeURIComponent(vars[key]);
+						}
+					}
+
+					var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script></head>
+
+
+<body>
+
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="#home" class="logo">
+                Color Theory
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#palettes">Palettes</a>
+                </li>
+
+                <li>
+                    <a href="#analysis">Analysis</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ================================
+             HERO SECTION
+        ================================= -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    WEB140 • Color Theory Project
+                </p>
+
+
+                <h1>
+                    Color Theory Palette
+                </h1>
+
+
+                <p class="hero-text">
+                    This project explores the color theory using 
+                    the Adobe Color tool to create color palettes based
+                    On three types of color harmony: Complementary, 
+                    Analogous and Triadic.
+                </p>
+
+
+                <a href="#palettes" class="button">
+                    Explore My Palettes
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             PALETTE SECTION
+        ================================= -->
+
+        <section id="palettes" class="section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Part 5 • Apply Your Palettes
+                </p>
+
+
+                <h2>
+                    My Color Palettes
+                </h2>
+
+
+                <p>
+                    Select a palette to see how different color
+                    combinations change the appearance of the webpage.
+                </p>
+
+            </div>
+
+
+            <!-- PALETTE BUTTONS -->
+
+            <div class="palette-buttons">
+
+                <button type="button" data-palette="palette1">
+                    Complementary
+                </button>
+
+
+                <button type="button" data-palette="palette2">
+                    Analogous
+                </button>
+
+
+                <button type="button" data-palette="palette3">
+                    Triadic
+                </button>
+
+            </div>
+
+
+            <!-- COLOR SWATCHES -->
+
+            <div class="swatches">
+
+
+                <div class="swatch">
+
+                    <div class="color-box primary-color"></div>
+
+                    <h3>
+                        Primary
+                    </h3>
+
+                    <p id="primaryHex">
+                        #2563EB
+                    </p>
+
+                </div>
+
+
+                <div class="swatch">
+
+                    <div class="color-box secondary-color"></div>
+
+                    <h3>
+                        Secondary
+                    </h3>
+
+                    <p id="secondaryHex">
+                        #0F766E
+                    </p>
+
+                </div>
+
+
+                <div class="swatch">
+
+                    <div class="color-box accent-color"></div>
+
+                    <h3>
+                        Accent
+                    </h3>
+
+                    <p id="accentHex">
+                        #F97316
+                    </p>
+
+                </div>
+
+
+                <div class="swatch">
+
+                    <div class="color-box background-color"></div>
+
+                    <h3>
+                        Background
+                    </h3>
+
+                    <p id="backgroundHex">
+                        #FFFFFF
+                    </p>
+
+                </div>
+
+
+                <div class="swatch">
+
+                    <div class="color-box text-color"></div>
+
+                    <h3>
+                        Text
+                    </h3>
+
+                    <p id="textHex">
+                        #1F2937
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================
+                 SAMPLE WEBSITE CARD
+            ================================= -->
+
+            <article class="design-card">
+
+                <div class="card-content">
+
+                    <p class="eyebrow">
+                        Sample Website
+                    </p>
+
+
+                    <h2>
+                        Color Creates Emotion
+                    </h2>
+
+
+                    <p>
+                        The colors we choose can influence the mood,
+                        personality, and visual appearance of a website.
+                        Experiment with the three palettes to see how
+                        the design changes.
+                    </p>
+
+
+                    <a href="#analysis" class="card-button">
+                        View My Analysis
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================================
+             COLOR ANALYSIS SECTION
+        ================================= -->
+
+        <section id="analysis" class="analysis-section">
+
+            <div class="section">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Part 6 • Explain Your Design Choices
+                    </p>
+
+
+                    <h2>
+                        My Color Analysis
+                    </h2>
+
+
+                    <p>
+                        Explain how your color choices relate to
+                        color theory and how you would use each
+                        palette in a website.
+                    </p>
+
+                </div>
+
+
+                <div class="analysis-grid">
+
+
+                    <!-- PALETTE 1 -->
+
+                    <article class="analysis-card">
+
+                        <h3>
+                            Palette 1
+                        </h3>
+
+
+                        <p>
+                            <strong>Harmony:</strong>
+                            Complementary
+                        </p>
+
+
+                        <p>
+                            <strong>Why I selected these colors:</strong>
+                            I chose these colors because they allow for a balance. The 
+                            colors don't overwhelm the page but rather draws you in to View
+                            the page.
+                        </p>
+
+
+                        <p>
+                            <strong>Mood:</strong>
+                            This palette creates a calming relaxing mood. Sets the page
+                            to be warm and balanced.
+                        </p>
+
+
+                        <p>
+                            <strong>Website Usage:</strong>
+                            I would use the primary color for Header and 
+                            major section. The background color allow for 
+                            the sections to stand out. The accent colors can be used for 
+                            buttons. The accent color draws the user's eyes to the button.
+                            The secondary colors can be used for headers and paragraphs.
+                    
+                        </p>
+
+                    </article>
+
+
+                    <!-- PALETTE 2 -->
+
+                    <article class="analysis-card">
+
+                        <h3>
+                            Palette 2
+                        </h3>
+
+
+                        <p>
+                            <strong>Harmony:</strong>
+                            Analogous
+                        </p>
+
+
+                        <p>
+                            <strong>Why I selected these colors:</strong>
+                            I selected these colors because of their warm tones.
+                            The color palette gives a natural feeling of autumn leaves.
+                        </p>
+
+
+                        <p>
+                            <strong>Mood:</strong>
+                            This palette gives a feeling of comfort 
+                            and serenity.
+                        </p>
+
+
+                        <p>
+                            <strong>Website Usage:</strong>
+                            EI would use the primary color for Header and 
+                            major sections. The background color allows for 
+                            the sections to stand out. The accent colors can be used for 
+                            buttons. I would switch out the accent and secondary colors
+                            when using the div tags, headers, and paragraphs
+                            to give a better contrast. 
+                        </p>
+
+                    </article>
+
+
+                    <!-- PALETTE 3 -->
+
+                    <article class="analysis-card">
+
+                        <h3>
+                            Palette 3
+                        </h3>
+
+
+                        <p>
+                            <strong>Harmony:</strong>
+                            Triadic
+                        </p>
+
+
+                        <p>
+                            <strong>Why I selected these colors:</strong>
+                            I chose these colors because of their contrast
+                            and projects energy.
+                        </p>
+
+
+                        <p>
+                            <strong>Mood:</strong>
+                            These are eyecatching colors that demand attention.
+                            The colors gives the feeling of energy.
+                        </p>
+
+
+                        <p>
+                            <strong>Website Usage:</strong>
+                            I would use the primary color for Header and 
+                            major sections The accent colors can be used for 
+                            buttons and div tags. The secondary colors can be used 
+                            for headers and paragraphs,.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Color Theory Project
+        </p>
+
+
+        <p>
+            WEB140 - Web Development Tools
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
