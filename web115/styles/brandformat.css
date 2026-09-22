@@ -86,12 +86,11 @@ dd:nth-of-type(odd){
   width: 100%; /* Ensures image fits the container */
   height: 200px;
   /*align-items: center;*/
-  object-fit: cover;}
+  object-fit: cover;
+}
 
-
-  
 .my-grid > div {
-    margin-bottom: 30px; /* Adjust the pixels to get the desired spacing */
+    margin-bottom: 30px;
 }
 
 
