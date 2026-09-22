@@ -28,64 +28,64 @@ function generateGreeting(event) {
         document.getElementById("form_container").style.display = "none";
 
         nextQuestion(firstName);
+}
+
+function nextQuestion(inputName){
+    const listContainer = document.getElementById('results_container');
+    
+    //make results container visible
+    listContainer.style.display = "block";
+
+    // Add the results greeting to header
+    document.getElementById('results_greeting').innerText = "How high do you want to count, " + inputName + "?";
+}
+
+function generateText(event){
+    event.preventDefault();
+    
+    const listContainer = document.getElementById('results_container');
+    const counter = Number(document.getElementById('count_value').value);
+
+    //<ul> element
+    const list = document.createElement('ul');
+    list.id = "baking-list";
+    list.style.listStyleType = "none";
+    list.style.padding = '0';
+    //listContainer.style.listStyleType = "none";
+
+    //<li> items
+    for (let i = 1; i <= counter; i++) {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${i}. Fresh cookies`;
+    list.appendChild(listItem);
     }
 
-    function nextQuestion(inputName){
-        const listContainer = document.getElementById('results_container');
-        
-        //make results container visible
-        listContainer.style.display = "block";
-
-        // Add the results greeting to header
-        document.getElementById('results_greeting').innerText = "How high do you want to count, " + inputName + "?";
-    }
-
-    function generateText(event){
-        event.preventDefault();
-       
-        const listContainer = document.getElementById('results_container');
-        const counter = Number(document.getElementById('count_value').value);
-
-        //<ul> element
-        const list = document.createElement('ul');
-        list.id = "baking-list";
-        list.style.listStyleType = "none";
-        list.style.padding = '0';
-        //listContainer.style.listStyleType = "none";
-
-        //<li> items
-        for (let i = 1; i <= counter; i++) {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${i}. Fresh cookies`;
-        list.appendChild(listItem);
-        }
-
-        //add to results container
-        listContainer.appendChild(list);
-    }
+    //add to results container
+    listContainer.appendChild(list);
+}
 
     
-    function resetPage(){
-        //Reset header
-        document.getElementById('greeting').innerText = "Welcome to Sugar Queen Bakery";
+function resetPage(){
+    //Reset header
+    document.getElementById('greeting').innerText = "Welcome to Sugar Queen Bakery";
 
-        //hide results
-        document.getElementById('results_container').style.display = "none";
+    //hide results
+    document.getElementById('results_container').style.display = "none";
 
-        //restore form visibility
-        document.getElementById("form_container").style.display = "block";
+    //restore form visibility
+    document.getElementById("form_container").style.display = "block";
 
-        //reset the content of the form
-        document.getElementById("fizzbuzz_form").reset(); 
+    //reset the content of the form
+    document.getElementById("fizzbuzz_form").reset(); 
 
-    }
+}
 
-    function handleResultsreset() {
-      //clear out list
-      const myList = document.getElementById('baking-list');
-      myList.innerHTML = '';
+function handleResultsreset() {
+    //clear out list
+    const myList = document.getElementById('baking-list');
+    myList.innerHTML = '';
 
-      //reset form
-      document.getElementById("results_form").reset();
+    //reset form
+    document.getElementById("results_form").reset();
 
-    }
+}

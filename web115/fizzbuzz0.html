@@ -59,11 +59,11 @@
             </form>       	
         </div>
         <div id="results_container">
-            <h3 id="results_greeting"></h3>
+            <h3 id="results_greeting">greeting goes here</h3>
             <form id="results_form">
                 <div>
                     <label for="count_value">Count Value</label>
-                    <input type="number" id="count_value"  min="0" required>
+                    <input type="number" id="count_value"  min="0" title="Please enter a valid number greater than 0." required>
                 </div>
                 <button type="button" onclick="generateText(event)">Generate Text</button>
                 <button type="button" onclick="handleResultsreset()">Reset</button>
