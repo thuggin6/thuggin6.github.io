@@ -66,11 +66,12 @@ dd:nth-of-type(odd){
 
 .my-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;         
-  gap: 30px 50px;
+  grid-template-columns: repeat(3,1fr);         
+  row-gap: 30px;
+  column-gap: 50px;
 }
 
-.my-grid img {
+.mygrid img{
   width: 100%;
   max-height: 300px;
   object-fit: contain;

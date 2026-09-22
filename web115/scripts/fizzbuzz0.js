@@ -86,7 +86,8 @@ function resetPage(){
 function handleResultsreset() {
     //clear out list
     const myList = document.getElementById('baking-list');
-    myList.innerHTML = '';
+    //myList.innerHTML = '';
+    myList.replaceChildren();
 
     //reset form
     document.getElementById("results_form").reset();
