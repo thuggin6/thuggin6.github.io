@@ -71,11 +71,6 @@ dd:nth-of-type(odd){
   grid-column-gap: 50px;
 }
 
-.my-grid img {
-  max-height: 300px;
-  object-fit: contain;
-}
-
 .my-grid2 {
   display: grid;
   grid-template-columns: 1fr; /* Forces all items into one vertical column */
@@ -89,5 +84,8 @@ dd:nth-of-type(odd){
   object-fit: cover;
 }
 
-
+.my-grid img {
+  max-height: 300px;
+  object-fit: contain;
+}
 
