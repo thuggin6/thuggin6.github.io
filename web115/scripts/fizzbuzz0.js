@@ -61,7 +61,7 @@ function generateText(event){
     const listItem = document.createElement('li');
     let outputMsg = "";
     //Check if even or odd
-    if (i%2== 0){
+    if (i%2 === 0){
         outputMsg = " - the number is even";
     }
     else {
@@ -69,7 +69,7 @@ function generateText(event){
     }
 
     listItem.textContent = `${i}. Fresh cookies ${outputMsg}`;
-    
+
     //add to end of unordered list
     list.appendChild(listItem);
     }

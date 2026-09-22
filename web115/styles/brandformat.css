@@ -71,7 +71,7 @@ dd:nth-of-type(odd){
   grid-column-gap: 50px;
 }
 
-.my-grid img{
+.my-grid img {
   width: 100%;
   max-height: 300px;
   object-fit: contain;
