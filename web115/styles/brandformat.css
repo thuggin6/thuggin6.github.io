@@ -12,19 +12,19 @@
   font-family: "Vast Shadow", serif;
 }
 
-main.brand h2{
+main .brand h2{
     display: flex;
     align-items: center;  
     justify-content: center;  
     gap: 4px;
 }
 
-main.brand h2 img{
+main .brand h2 img{
     margin-left: 30px;
     margin-right: -8px;
 }
 
-main.brand div article p {
+main .brand div article p {
     font-weight: 500;
     margin-bottom: 50px ;
 }
@@ -66,7 +66,7 @@ dd:nth-of-type(odd){
 
 .my-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;         
   gap: 50px;
 }
 
