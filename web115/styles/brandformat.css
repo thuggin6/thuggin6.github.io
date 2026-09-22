@@ -64,17 +64,17 @@ dd:nth-of-type(odd){
        grid-column-start: 2; 
 }
 
-.my-grid{
+.my-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;         
   gap: 50px;
 }
 
 .my-grid img {
-  width: 100%; /* Ensures image fits the container */
+  width: 100%;
   max-height: 300px;
-  /*align-items: center;*/
-  object-fit: contain;}
+  object-fit: contain;
+}
 
 .my-grid2 {
   display: grid;
