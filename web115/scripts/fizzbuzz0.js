@@ -1,3 +1,14 @@
+function nextQuestion(inputName){
+    const listContainer = document.getElementById('results_container');
+    
+    //make results container visible
+    listContainer.style.display = "block";
+
+    // Add the results greeting to header
+    document.getElementById('results_greeting').innerText = "How high do you want to count, " + inputName + "?";
+}
+
+
 function generateGreeting(event) {
         // Prevent the form from refreshing the page on submission
         event.preventDefault();
@@ -27,19 +38,10 @@ function generateGreeting(event) {
 
         document.getElementById("form_container").style.display = "none";
 
-        if (typeof nextQuestion === 'function') {nextQuestion(firstName);}
+        nextQuestion(firstName);
         
 }
 
-function nextQuestion(inputName){
-    const listContainer = document.getElementById('results_container');
-    
-    //make results container visible
-    listContainer.style.display = "block";
-
-    // Add the results greeting to header
-    document.getElementById('results_greeting').innerText = "How high do you want to count, " + inputName + "?";
-}
 
 function generateText(event){
     event.preventDefault();
