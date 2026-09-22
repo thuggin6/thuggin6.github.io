@@ -12,14 +12,14 @@
   font-family: "Vast Shadow", serif;
 }
 
-.brand h2{
+#brand-heading2 {
     display: flex;
     align-items: center;  
     justify-content: center;  
     gap: 4px;
 }
 
-.brand h2 img{
+#brand-heading2 img{
     margin-left: 30px;
     margin-right: -8px;
 }
