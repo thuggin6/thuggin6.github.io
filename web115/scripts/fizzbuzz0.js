@@ -59,7 +59,18 @@ function generateText(event){
     //<li> items
     for (let i = 1; i <= counter; i++) {
     const listItem = document.createElement('li');
-    listItem.textContent = `${i}. Fresh cookies`;
+    let outputMsg = "";
+    //Check if even or odd
+    if (i%2== 0){
+        outputMsg = " - the number is even";
+    }
+    else {
+        outputMsg = " - the number is odd";
+    }
+
+    listItem.textContent = `${i}. Fresh cookies ${outputMsg}`;
+    
+    //add to end of unordered list
     list.appendChild(listItem);
     }
 
