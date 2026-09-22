@@ -1,9 +1,42 @@
 @charset "utf-8";
 
-
+/*---------------------------------------------------------------------Brand Format Begin------------------------------------------------------------------------*/
 #brand_body {
 	background-color: #FFbeb2;  
+  font-family: "Jim Nightshade", cursive;
+  font-size: 20px;
+  color: #800020;
 }
+
+#brand-header{
+  font-family: "Vast Shadow", serif;
+}
+
+main.brand h2{
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    gap: 4px;
+}
+
+main.brand h2 img{
+    margin-left: 30px;
+    margin-right: -8px;
+}
+
+main.brand div article p {
+    font-weight: 500;
+    margin-bottom: 50px ;
+}
+
+.brand{
+    padding: 20px;
+}
+
+/*---------------------------------------------------------------------Brand Format End------------------------------------------------------------------------*/
+
+
+
 
 header img{
 	width: 100%;	
@@ -20,7 +53,7 @@ dt {
 dl {
 	display: grid;
 	grid-template-columns: max-content 1fr;
-    gap: 100px 16px;              /* Row gap and column gap */
+  gap: 100px 16px;              /* Row gap and column gap */
 	margin-left: 2%;
 }
 
@@ -61,7 +94,4 @@ dd:nth-of-type(odd){
     margin-bottom: 30px; /* Adjust the pixels to get the desired spacing */
 }
 
-main.brand div article p {
-    font-weight: 500;
-    margin-bottom: 50px ;
-}
+

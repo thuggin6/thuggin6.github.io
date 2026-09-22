@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teresa Huggins's Theroretical Hummingbird &#9733; WEB115 - Fizz Buzz 0</title>
+    <!-- Cascading stylesheet -->
+    <link href="styles/default.css" rel="stylesheet" />
+	<link href="styles/brandformat.css" rel="stylesheet" />
+    <link href="styles/fizzbuzz0.css" rel="stylesheet" />
+    <script src="scripts/fizzbuzz0.js" crossorigin="anonymous"></script>
+	<link href="images/SQCrownFavicon.png" rel="icon" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Lavishly+Yours&family=Vast+Shadow&display=swap" rel="stylesheet">
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body id="brand_body">
+    <header>
+		<h1 id="brand-header">
+			<img class="header_logo" src="images/headerlogo_pink.png" alt="book icon">
+			Teresa Huggins's Theroretical Hummingbird &#9733; WEB115
+		</h1>
+		<!-- Navigation list with links -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="introduction.html">Introduction</a></li>
+				<li><a href="contract.html">Contract</a></li>
+                <li><a href="brandguide.html">Brand</a></li>
+				<li><a href="codeplay.html">Codeplay</a></li>
+                <li><a href="fizzbuzz0.html">Fizz Buzz 0</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="brand">
+		<h2><img src="images/logo.png" alt="Brand Logo"   width="300" />Fizz Buzz 0</h2>	
+        <h3 id="greeting">Welcome to Sugar Queen Bakery</h3> 
+		<div id="form_container">
+        	
+            <form id="fizzbuzz_form" onsubmit="generateGreeting(event)">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="First name here" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="middle_initial">Middle Initial(optional)</label>
+                    <input type="text" id="middle_initial" maxlength="1" size="3">
+                </div>
+
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Last name here" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>       	
+        </div>
+        <div id="results_container">
+            <h3 id="results_greeting"></h3>
+            <form id="results_form" ">
+                <div>
+                    <label for="count_value">Count Value</label>
+                    <input type="number" id="count_value"  min="0" required>
+                </div>
+                <button type="button" onclick="generateText(event)">Generate Text</button>
+                <button type="button" onclick="handleResultsreset()">Reset</button>
+                <button type="button" onclick="resetPage()">Back</button>
+                
+            </form>
+        </div>
+	</main>
+    <!-- Footer with character references -->
+	<footer>
+        <a href="https://github.com/thuggin6" target="_blank" rel="noopener noreferrer">GitHub</a> &#8226; <a href="https://thuggin6.github.io/index.html" target="_blank" rel="noopener noreferrer">GitHub.io</a> &#8226; <a href="https://www.freecodecamp.org/thuggins" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> &#8226; <a href="https://www.codecademy.com/profiles/THtweety01" target="_blank" rel="noopener noreferrer">Codecademy</a> &#8226; <a href="https://www.linkedin.com/in/teresa-huggins-b1189162/" target="_blank" rel="noopener">Linkedin</a>  
+        
+		<p><em><strong>Page designed by TTH Designs</strong></em></p>
+    </footer>
+	<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+</body>
+</html>
