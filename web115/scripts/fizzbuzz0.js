@@ -27,7 +27,8 @@ function generateGreeting(event) {
 
         document.getElementById("form_container").style.display = "none";
 
-        nextQuestion(firstName);
+        if (typeof nextQuestion === 'function') {nextQuestion(firstName);}
+        
 }
 
 function nextQuestion(inputName){
