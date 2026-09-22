@@ -67,7 +67,7 @@ dd:nth-of-type(odd){
 .my-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;         
-  gap: 50px;
+  gap: 30px 50px;
 }
 
 .my-grid img {
@@ -89,8 +89,5 @@ dd:nth-of-type(odd){
   object-fit: cover;
 }
 
-.my-grid > div {
-    margin-bottom: 30px;
-}
 
 
