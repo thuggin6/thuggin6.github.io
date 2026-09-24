@@ -12,8 +12,8 @@
   font-family: "Vast Shadow", serif;
 }
 
-.brand h2, 
-.brand h3 {
+ h2, 
+ h3 {
     display: flex;
     align-items: center;  
     justify-content: center;  
