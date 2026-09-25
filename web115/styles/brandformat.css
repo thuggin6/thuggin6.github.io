@@ -3,13 +3,18 @@
 /*---------------------------------------------------------------------Brand Format Begin------------------------------------------------------------------------*/
 #brand_body {
 	background-color: #FFbeb2;  
-  font-family: "Jim Nightshade", cursive;
+  font-family: "Jim Nightshade", Verdana;
   font-size: 20px;
   color: #800020;
 }
 
 #brand-header{
-  font-family: "Vast Shadow", serif;
+  font-family: "Vast Shadow", serif; 
+  color: #692134;
+}
+
+nav ul {
+  font-family: "Vast Shadow",Verdana, Helvetica;
 }
 
  h2, 
@@ -17,6 +22,7 @@
     display: flex;
     align-items: center;  
     justify-content: center;  
+    font-family: "Lavishly Yours", Verdana;
     gap: 4px;
 }
 
@@ -34,6 +40,9 @@ main .brand div article p {
     padding: 20px;
 }
 
+.brand-footer{
+  font-family: "Vast Shadow",Verdana, Helvetica;
+}
 /*---------------------------------------------------------------------Brand Format End------------------------------------------------------------------------*/
 
 
@@ -41,10 +50,10 @@ main .brand div article p {
 
 header img{
 	width: 100%;	
-    height: 200px;
+  height: 200px;
 	display: block;	
-    object-fit: scale-down;
-    object-position: center;
+  object-fit: scale-down;
+  object-position: center;
 }
 
 dt {

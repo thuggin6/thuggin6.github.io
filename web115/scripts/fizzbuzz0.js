@@ -5,7 +5,7 @@ function nextQuestion(inputName){
     listContainer.style.display = "block";
 
     // Add the results greeting to header
-    document.getElementById('results_greeting').innerText = "How high do you want to count, " + inputName + "?";
+    document.getElementById('results_msg').innerText = "How high do you want to count, " + inputName + "?";
 }
 
 

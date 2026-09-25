@@ -2,7 +2,7 @@
 
 h1 {
 	text-align: center;
-    color: #F54927;
+    color: #654321;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -10,7 +10,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: #654321;
 }
 h5,h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -19,6 +19,7 @@ nav ul {
   display: table;
   width: 100%;
   border-collapse: collapse; /* Moves here to control cell spacing */
+  font-weight: 600;
 }
 nav ul li {
 	display: table-cell;
@@ -114,12 +115,12 @@ ul ul {
 
 /* Unvisited link */
 a:link {
-  color: #3498db; 
+  color: #EF7104; 
 }
 
 /*Visited link */
 a:visited {
-  color: #9b59b6; 
+  color: #BA8E23; 
 }
 
 
