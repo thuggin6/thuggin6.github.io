@@ -74,7 +74,7 @@ figcaption {
     font-weight: 600;
 }
 
-pre {
+samp {
     background-color: #2d3748;
     color: #f7fafc;
     padding: 15px;
@@ -84,7 +84,7 @@ pre {
     font-size: 0.9rem;
 }
 
-samp {
+pre {
     display: block; 
     background-color: #edf2f7;
     color: #2d3748; 
@@ -95,7 +95,7 @@ samp {
     border-left: 4px solid #cbd5e0;
 }
 
-samp pre {
+pre samp {
     background-color: transparent;
     color: inherit;
     padding: 0;
