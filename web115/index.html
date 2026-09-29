@@ -10,26 +10,11 @@
 	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-		<h1>
-			<img class="header_logo" src="images/headerlogo_grey.png" alt="book icon">
-			Teresa Huggins's Theoretical Hummingbird &#9733; WEB115
-		</h1>
-		<!-- Navigation list with links -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="introduction.html">Introduction</a></li>
-				<li><a href="contract.html">Contract</a></li>
-				<li><a href="brandguide.html">Brand</a></li>
-				<li><a href="codeplay.html">Codeplay</a></li>
-				<li><a href="fizzbuzz0.html">Fizz Buzz 0</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div data-include="components/header.html"></div>
 	<main class="main-home">
 		<article> 
 			<h2>Home</h2>
+			<!--this class id and div is Oriented differently than any other page -->
 			<div class="home-content">
 			<p>You are visiting my home page for WEB115. Througout this course, links will be
             added for assignments and projects. I am taking this course to satisfy my web
@@ -37,11 +22,10 @@
 			</div>
 		</article>
 	</main>
-    <!-- Footer with character references -->
-	<footer>
-        <a href="https://thuggin6.github.io" target="_blank" rel="noopener noreferrer">GitHub.io</a> &#8226; <a href="https://github.com/thuggin6" target="_blank" rel="noopener noreferrer">GitHub</a> &#8226; <a href="https://www.freecodecamp.org/thuggins" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> &#8226; <a href="https://www.codecademy.com/profiles/THtweety01" target="_blank" rel="noopener noreferrer">Codecademy</a> &#8226; <a href="https://www.linkedin.com/in/teresa-huggins-b1189162/" target="_blank" rel="noopener">LinkedIn</a>
-		<p><em><strong>Page designed by TTH Designs</strong></em></p>
-    </footer>
+    <!-- Footer-->
+	<div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.js"></script>
 	<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>

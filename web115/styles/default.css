@@ -7,10 +7,12 @@ h1 {
 
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #654321;
+h2 {  
+    text-align: left;
+    font-family: "Vast Shadow", serif; 
+    color: #692134;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #654321;*/
 }
 h5,h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -59,11 +61,15 @@ footer {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  /*Takes full viewport height */
-  background-color: lightgrey; 
-  font-family: Verdana, Helvetica;
+  min-height: 100vh;  
+  /*background-color: lightgrey; */
+  /*font-family: Verdana, Helvetica;*/
   max-width: 900px ;
-  margin: 0 auto;
+  margin: 0 auto; 
+  background-color: #FFbeb2;  
+  font-family: "Jim Nightshade", Verdana;
+  font-size: 23px;
+  color: #800020;
 }
 
 .header_logo {
@@ -122,5 +128,3 @@ a:link {
 a:visited {
   color: #BA8E23; 
 }
-
-

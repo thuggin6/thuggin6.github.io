@@ -51,7 +51,7 @@ input[type="text"]::placeholder {
 }
 button {
     background-color: #ff69b4;
-    color: white;
+    color: #692134; 
     padding: 10px 15px;
     border: none;
     border-radius: 4px;

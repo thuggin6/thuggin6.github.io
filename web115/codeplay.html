@@ -11,963 +11,950 @@
 	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-		<h1>
-			<img class="header_logo" src="images/headerlogo_grey.png" alt="book icon">
-			Teresa Huggins's Theoretical Hummingbird &#9733; WEB115
-		</h1>
-		<!-- Navigation list with links -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="introduction.html">Introduction</a></li>
-				<li><a href="contract.html">Contract</a></li>
-				<li><a href="brandguide.html">Brand</a></li>
-				<li><a href="codeplay.html">Codeplay</a></li>
-                <li><a href="fizzbuzz0.html">Fizz Buzz 0</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div data-include="components/header.html"></div>
 	<main>
 		<h2>Codeplay</h2>
     
-    <div class="container">
+    <Section class="container">
     
     <!--1: variable declaration -->
-    <div class="example-card">
-        <div class="card-header">1. Declarations</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>1. Declarations</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>score = 102;
 console.log(score)</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+                </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>100</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--2: variable declaration using const -->
-    <div class="example-card">
-        <div class="card-header">2. variable declaration</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+<!--this class id is Oriented differently than any other page -->
+    <article>
+        <!--this class id is Oriented differently than any other page -->
+        <section>2. variable declaration</section>
+        <!--this class id is Oriented differently than any other page -->
+        <section>
+            <!--this class id is Oriented differently than any other page -->
+            <figure>
+                <!--this class id is Oriented differently than any other page -->
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const score = 120;
 score = 200;
 console.log(score);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+                </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>score = 200;
       ^
 
 TypeError: Assignment to constant variable.</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>   
+                    </samp>
+                </figure>
+        </section>
+    </article>   
 
 <!--3: variable declaration correction-->
-    <div class="example-card">
-        <div class="card-header">3. Declarations - correction const is immutable</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>3. Declarations - correction const is immutable</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const score = 120;
 console.log(score);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+                </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>120</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </samp>
+        </section>
+    </article>
 <!--4: Modulus -->
-    <div class="example-card">
-        <div class="card-header">4. Modulus</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>4. Modulus</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let isEven = 42%2
 console.log(isEven);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>0</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--5:  -->
-    <div class="example-card">
-        <div class="card-header">5.Exponentiation </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>5.Exponentiation </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let numb = 2 ** 8
 console.log(numb);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>256</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--6:  -->
-    <div class="example-card">
-        <div class="card-header">6. Multiplication</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>6. Multiplication</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let numb = 2 * 8
 console.log(numb);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>16</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--7:  -->
-    <div class="example-card">
-        <div class="card-header">7. Addition </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>7. Addition </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let total = 5 + 10; 
 console.log(total);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>15</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--8:  -->
-    <div class="example-card">
-        <div class="card-header">8.Cancatenation </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>8.Cancatenation </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let message = "Hello " + "World";
 console.log(message);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Hello World</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--9:  -->
-    <div class="example-card">
-        <div class="card-header">9. Unary + Error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>9. Unary + Error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const bigNum = 42n;
 const result = +bigNum; 
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>const result = +bigNum; 
                ^
 
 TypeError: Cannot convert a BigInt value to a number</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--10:  -->
-    <div class="example-card">
-        <div class="card-header">10. Unary Operator (Convert to a number) </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>10. Unary Operator (Convert to a number) </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let priceCode = "49.99";
 let numericPrice = +priceCode;
 console.log(numericPrice);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>49.99</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
  <!--11:  -->
-    <div class="example-card">
-        <div class="card-header">11.String Concatenation w/ number</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>11.String Concatenation w/ number</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let tricky = "5" + 5;
 console.log(tricky);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>55</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--12:  -->
-    <div class="example-card">
-        <div class="card-header">12. Increment error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>12. Increment error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let num = 5++;
 console.log(num);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>let num = 5++;
-          ^
-
+                    
 SyntaxError: Invalid left-hand side expression in postfix operation</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>   
+				</samp>
+            </figure>
+        </section>
+    </article>   
 
 <!--13:  -->
-    <div class="example-card">
-        <div class="card-header">13. Increment Operator</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>13. Increment Operator</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let score = 5;
 score++
 console.log(score);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>6</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--14:  -->
-    <div class="example-card">
-        <div class="card-header">14.Increment Postfix </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>14.Increment Postfix </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let x = 10;let y = x++;
 console.log(`x=${x}, y=${y}`);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 				<pre><code>Output-only Terminal
 Output:
 x=11, y=10</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--15:  -->
-    <div class="example-card">
-        <div class="card-header">15. Increment Prefix</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>15. Increment Prefix</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let x = 10;let y = ++x;
 console.log(`x=${x}, y=${y}`);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>x=11, y=11</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--16:  -->
-    <div class="example-card">
-        <div class="card-header">16. Infinite Loop-stays 0</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>16. Infinite Loop-stays 0</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let count = 0;
 count = count++;
 console.log(count);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>0</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--17:  -->
-    <div class="example-card">
-        <div class="card-header">17.division operator </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>17.division operator </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let result = 10 / 2
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>5</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--18:  -->
-    <div class="example-card">
-        <div class="card-header">18. Literal Delimiter </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>18. Literal Delimiter </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let pattern = /apple/i;</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Matches the word "apple"</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--19:  -->
-    <div class="example-card">
-        <div class="card-header">19.Division NaN  </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>19.Division NaN  </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const result = "apple" / 2
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>NaN</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--20:  -->
-    <div class="example-card">
-        <div class="card-header">20.Assignment Operator Error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>20.Assignment Operator Error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const price = 10;
 price *= 1.05
 console.log(price);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>price *= 1.05
       ^
 
 TypeError: Assignment to constant variable.</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
  <!--21: variable declaration -->
-    <div class="example-card">
-        <div class="card-header">21. Assignment Operator Fixed</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>21. Assignment Operator Fixed</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let price = 10;
 price *= 1.05;</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>10.5</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--22:  -->
-    <div class="example-card">
-        <div class="card-header">22. Assignment Operator error </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>22. Assignment Operator error </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let score;
 score *= 5; 
 console.log(score);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>NaN</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>   
+				</samp>
+            </figure>
+        </section>
+    </article>   
 
 <!--23:  -->
-    <div class="example-card">
-        <div class="card-header">23.Assignment operator corrected </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>23.Assignment operator corrected </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let score;let count = Number("10"); 
 count *= 2; 
 console.log(count);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>20</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--24:  -->
-    <div class="example-card">
-        <div class="card-header">24. Subtraction </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>24. Subtraction </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let result = 15 - 5;
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>10</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--25:  -->
-    <div class="example-card">
-        <div class="card-header">25. String Concatenation Precedence Error </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>25. String Concatenation Precedence Error </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>console.log("Total: " + 10 - 2);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>NaN</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--26:  -->
-    <div class="example-card">
-        <div class="card-header">26. String Concatenation Precedence-Corrected</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>26. String Concatenation Precedence-Corrected</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>console.log("Total: " + (10-2));</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Total: 8</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--27:  -->
-    <div class="example-card">
-        <div class="card-header">27. Operator precedence </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>27. Operator precedence </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const result = 5 + 3 * 2;
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>11</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--28:  -->
-    <div class="example-card">
-        <div class="card-header">28.Operator Precedence </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>28.Operator Precedence </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const result = (5 + 3) * 2;
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>16</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--29:  -->
-    <div class="example-card">
-        <div class="card-header">29. Operator Precedence  </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>29. Operator Precedence  </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const result = 5 * 3 + 4/2;
 console.log(result);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>17</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--30:  -->
-    <div class="example-card">
-        <div class="card-header">30. Math.min error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>30. Math.min error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const scores = [10, 5, 20];
 console.log(Math.min(scores));</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>NaN</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
  <!--31:  -->
-    <div class="example-card">
-        <div class="card-header">31. Math.min corrected </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>31. Math.min corrected </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>const scores = [10, 5, 20];
 console.log(Math.min(...scores)); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>5</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--32:  -->
-    <div class="example-card">
-        <div class="card-header">32. Math.min </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>32. Math.min </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>score = console.log(Math.min(10,5));</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>5</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>   
+				</samp>
+            </figure>
+        </section>
+    </article>   
 
 <!--33:  -->
-    <div class="example-card">
-        <div class="card-header">33. Math.PI error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>33. Math.PI error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>console.log(Math.PI(12));)</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>console.log(Math.PI(12));
                  ^
 
 TypeError: Math.PI is not a function</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--34: -->
-    <div class="example-card">
-        <div class="card-header">34. Math.PI corrected</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>34. Math.PI corrected</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>console.log(Math.PI * 12);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>37.69911184307752</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--35: variable declaration -->
-    <div class="example-card">
-        <div class="card-header">35. Combining Strings</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>35. Combining Strings</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let greeting = `Hello, ${name}!`; </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Hello, Alice!</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </article>
+    </section>
 <!--36:  -->
-    <div class="example-card">
-        <div class="card-header">36. Extracting strings</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>36. Extracting strings</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let text = "JavaScript";
 console.log(text.slice(0, 4));</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Java</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--37:  -->
-    <div class="example-card">
-        <div class="card-header">37.</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>37.</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>score = 102;
 console.log(score)</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>100</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--38:-->
-    <div class="example-card">
-        <div class="card-header">38.Immutable error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>38.Immutable error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let greeting = "Hello";
 greeting[0] = "Y"; 
 console.log(greeting); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Hello</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--39:  -->
-    <div class="example-card">
-        <div class="card-header">39.Correction for #38 </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>39.Correction for #38 </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let greeting = "Hello";
 greeting = "Y" + greeting.slice(1); 
 console.log(greeting); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Yello</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--40:  -->
-    <div class="example-card">
-        <div class="card-header">40.Text Replacement</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>40.Text Replacement</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let phrase = "cats and dogs and cats"; 
 console.log(phrase.replace("cats", "birds")); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>birds and dogs and cats</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
  <!--41:  -->
-    <div class="example-card">
-        <div class="card-header">41. TypeError</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>41. TypeError</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let userInput = null;
 let lower = userInput.toLowerCase();
 console.log(lower); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>let lower = userInput.toLowerCase();
                       ^
 
 TypeError: Cannot read property 'toLowerCase' of null</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--42:  -->
-    <div class="example-card">
-        <div class="card-header">42. Undefined string index </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>42. Undefined string index </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let text = "Hi";
 console.log(text[5]);  </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>undefined</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>   
+				</samp>
+            </figure>
+        </section>
+    </article>   
 
 <!--43:  -->
-    <div class="example-card">
-        <div class="card-header">43. String Index</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>43. String Index</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let text = "Hi";  
 console.log(text.charAt(5)); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>//returns empty string</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--44:  -->
-    <div class="example-card">
-        <div class="card-header">44. + operator forces every thing to a string </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>44. + operator forces every thing to a string </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let price = "10";
 let tax = 5;
 console.log(price + tax);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>105</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--45:  -->
-    <div class="example-card">
-        <div class="card-header">45. Create an array</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>45. Create an array</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let userProfile = ["Alex", 28, true, { role: "Admin" }];
 console.log(userProfile);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>[ 'Alex', 28, true, { role: 'Admin' } ]</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--46:  -->
-    <div class="example-card">
-        <div class="card-header">46. Access element in array</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>46. Access element in array</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let userProfile = ["Alex", 28, true, { role: "Admin" }];
 console.log(userProfile[0]);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>Alex</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 <!--47:  -->
-    <div class="example-card">
-        <div class="card-header">47. Access incorrect element in array</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>47. Access incorrect element in array</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>et userProfile = ["Alex", 28, true, { role: "Admin" }];
 console.log(userProfile[4]);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>undefined</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--48:  -->
-    <div class="example-card">
-        <div class="card-header">48. Array range error </div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>48. Array range error </section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>score = let arr = [1, 2, 3];
 arr.length = -5;</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>arr.length = -5;
            ^
 
 RangeError: Invalid array length</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 <!--49:  -->
-    <div class="example-card">
-        <div class="card-header">49. Array length corrected</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>49. Array length corrected</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let arr = [1, 2, 3];
 console.log(arr.length);</code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>3</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 
 <!--50:  -->
-    <div class="example-card">
-        <div class="card-header">50.  String Type error</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>50.  String Type error</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let user; 
 console.log(user.length); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>console.log(user.length); 
                  ^
 
 TypeError: Cannot read property 'length' of undefined</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
+				</samp>
+            </figure>
+        </section>
+    </article>
 	
 	<!--51:  -->
-    <div class="example-card">
-        <div class="card-header">51.  String Type corrected</div>
-        <div class="card-body">
-            <div class="pane">
-                <div class="pane-title">JavaScript Code</div>
+    <article>
+        <section>51.  String Type corrected</section>
+        <section>
+            <figure>
+                <figcaption>avaScript Code</figcaption>
                 <pre><code>let user  = "test"; 
 console.log(user.length); </code></pre>
-            </div>
-            <div class="pane">
-                <div class="pane-title">Results</div>
-                <div class="output-box">
+            </figure>
+            <figure>
+                <figcaption>Results</figcaption>
+                <samp>
 					<pre><code>4</code></pre>
-				</div>
-            </div>
-        </div>
-    </div>
-     </div>>
+				</samp>
+            </figure>
+        </section>
+    </article>
+</section>
 	</main>
-    <!-- Footer with character references -->
-	<footer>
-        <a href="https://thuggin6.github.io" target="_blank" rel="noopener noreferrer">GitHub.io</a> &#8226; <a href="https://github.com/thuggin6" target="_blank" rel="noopener noreferrer">GitHub</a> &#8226; <a href="https://www.freecodecamp.org/thuggins" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> &#8226; <a href="https://www.codecademy.com/profiles/THtweety01" target="_blank" rel="noopener noreferrer">Codecademy</a> &#8226; <a href="https://www.linkedin.com/in/teresa-huggins-b1189162/" target="_blank" rel="noopener">LinkedIn</a>
-		<p><em><strong>Page designed by TTH Designs</strong></em></p>
-    </footer>
+    <!-- Footer-->
+	<div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.js"></script>
 	<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
