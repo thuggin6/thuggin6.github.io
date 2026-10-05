@@ -4,6 +4,7 @@
 
 nav ul {
   font-family: "Vast Shadow",Verdana, Helvetica;
+  font-size: medium;
 }
 
  h2, 
@@ -63,8 +64,7 @@ dd:nth-of-type(odd){
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);         
-  grid-row-gap: 30px;
-  grid-column-gap: 50px;
+  gap: 30px 50px;  
 }
 
 .brand-grid2 {
@@ -81,7 +81,8 @@ dd:nth-of-type(odd){
 }
 
 .brand-grid img {
-  max-height: 300px;
+  max-height: 500px;
+  max-width: 500px;
   object-fit: contain;
 }
 
