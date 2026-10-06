@@ -61,11 +61,6 @@ dd:nth-of-type(odd){
        grid-column-start: 2; 
 }
 
-.brand-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);         
-  /*gap: 30px 50px;  */
-}
 
 .brand-grid2 {
   display: grid;
@@ -80,9 +75,4 @@ dd:nth-of-type(odd){
   object-fit: cover;
 }
 
-.brand-grid img {
-  /*max-height: 500px; */
-  max-width: 500px;
-  object-fit: contain;
-}
 
