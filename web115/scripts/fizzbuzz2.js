@@ -10,7 +10,7 @@ function nextQuestion(inputName){
 
 //check if a counter value is evenly divisible by a number
 function checkDivision(counter, secDivisor){ 
-    let isDivisiable = false   
+    let isDivisiable = false;   
     if (counter % secDivisor === 0){isDivisiable = true;  }
     return isDivisiable;
 }
