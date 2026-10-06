@@ -8,6 +8,13 @@ function nextQuestion(inputName){
     document.getElementById('results_msg').innerText = "Time to Count , " + inputName + "...";
 }
 
+//check if a counter value is evenly divisible by a number
+function checkDivision(counter, secDivisor){ 
+    let isDivisiable = false   
+    if (counter % secDivisor === 0){isDivisiable = true;  }
+    return isDivisiable;
+}
+
 
 function generateGreeting(event) {
         // Prevent the form from refreshing the page on submission
@@ -111,10 +118,4 @@ function handleResultsreset() {
     //reset form
     document.getElementById("results_form").reset();    
 
-}
-//check if a counter value is evenly divisible by a number
-function checkDivision(counter, secDivisor){ 
-    let isDivisiable = false   
-    if (counter % secDivisor === 0){isDivisiable = true;  }
-    return isDivisiable;
 }

@@ -17,16 +17,18 @@ h5,h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul {
-  display: table;
+ display: table;
   width: 100%;
-  border-collapse: collapse; /* Moves here to control cell spacing */
+  border-collapse: collapse;  
   font-weight: 600;
+ 
+ 
 }
 nav ul li {
 	display: table-cell;
-	text-align: center;
+	text-align: center; 
 	border: none;	
-    border-right: 1px solid #4169E1; 
+  border-right: 1px solid #4169E1; 
 }
 
 nav ul li:last-child {
