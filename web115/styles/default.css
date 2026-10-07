@@ -4,7 +4,7 @@ h1 {
 	text-align: center;
     color: #654321;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-size: 30px;
 }
 
 h2 {  
@@ -46,7 +46,6 @@ nav a {
   align-items: center;
   justify-content: left;
   text-align: left; 
-  font-weight: bold;
   
 }
 
@@ -73,7 +72,7 @@ body {
   color: #800020;
 }
 
-.header-logo {
+header h1 img {
   width: 30px;
   height: 30px;
   display: inline-block;
