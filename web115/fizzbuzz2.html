@@ -32,7 +32,7 @@
                 </div>
                 <!--this class id and div  is Oriented differently than any other page -->
                 <div class="form-group">
-                    <label for="middle_initial">Middle Initial(optional)</label>
+                    <label for="middle_initial">Middle Initial (optional)</label>
                     <input type="text" id="middle_initial" maxlength="1" size="3">
                 </div>
                 <!--this class id and div  is Oriented differently than any other page -->
@@ -53,9 +53,9 @@
                     <label for="count_value">Enter Counter</label>
                     <input type="number" id="count_value"  name="count_value" min="1"  required>
                     <label for="first_divisor">Enter first divisor:</label>
-                    <input type="number" id="first_divisor"  name="first_divisor" min="1"  required>
+                    <input type="number" id="first_divisor"  name="first_divisor" min="1"  required onchange="if(this.value <= 0) this.value = 1;">
                     <label for="second_divisor">Enter second divisor:</label>
-                    <input type="number" id="second_divisor"  name="second_divisor" min="1" required>
+                    <input type="number" id="second_divisor"  name="second_divisor" min="1" required onchange="if(this.value <= 0) this.value = 1;">
                 </fieldset>
                 <button type="button" onclick="generateText(event)">View Results</button>
                 <button type="button" onclick="handleResultsreset()">Reset</button>                   
