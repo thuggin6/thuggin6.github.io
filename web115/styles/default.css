@@ -21,54 +21,50 @@ h6 {
     white-space: nowrap;
     text-align: center;
 }
-nav ul {
- display: table;
+nav {  
+  padding: 10px 20px;
   width: 100%;
-  border-collapse: collapse;  
-  font-weight: 600;
- 
- 
 }
-nav ul li {
-	display: table-cell;
-	text-align: center; 
-	border: none;	
-  border-right: 1px solid #4169E1; 
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: center;
+  gap: 3px; /* Even spacing between items */
 }
-
-nav ul li:last-child {
-  border-right: none; }
-
-nav a {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 100;
+nav ul li a {
+  display: block;
+  white-space: nowrap;  
+  text-decoration: none; 
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 4px;
 }
- 
 .home-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: left;
-  text-align: left; 
-  
+  text-align: left;   
 }
 
 footer {
 	text-align: center;
-	margin-top: 4%;	
-	font-family: Verdana, Helvetica;
+	margin-top: 4%;		
 	clear: both;
+  font-size: 20px;
+  font-weight: 500;
 	padding-bottom: 20px;	  
-    margin-top: auto; /* push footer to bottom of page */
+  margin-top: auto; /* push footer to bottom of page */
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;  
-  /*background-color: lightgrey; */
-  /*font-family: Verdana, Helvetica;*/
   max-width: 900px ;
   margin: 0 auto; 
   background-color: #FFbeb2;  
