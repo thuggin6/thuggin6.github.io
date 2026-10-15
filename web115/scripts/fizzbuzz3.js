@@ -61,7 +61,7 @@ function generateText(){
     const rules = [
         { divisor: firstDivisor, word: "Puff" },
         { divisor: secondDivisor, word: "Pastry" },
-        { divisor: thirdDivisor, word: "Bang!" },
+        { divisor: thirdDivisor, word: "Bang!" }
     ];
 
 
@@ -78,7 +78,7 @@ function generateText(){
 
         //find which moduls is true (i%divisor) and add to the array.
         const matchingWords = rules
-            .filter(rule => checkDivision(i, rule.divisor)).map(rule => rule.word);
+            .filter((rule) => checkDivision(i, rule.divisor)).map((rule) => rule.word);
 
         //final output message
         if (matchingWords.length > 0) {
