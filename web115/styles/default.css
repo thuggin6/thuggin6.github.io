@@ -68,10 +68,11 @@ body {
   min-height: 100vh;  
   max-width: 900px ;
   margin: 0 auto; 
-  background-color: #FFbeb2;  
+  background-color: #AD1900;  
   font-family: "Jim Nightshade", Verdana;
   font-size: 23px;
-  color: #800020;
+  color: #F7F7F7
+;
 }
 
 .header-logo {
@@ -123,10 +124,10 @@ ul ul {
 
 /* Unvisited link */
 a:link {
-  color: #EF7104; 
+  color: #FCEBE3; 
 }
 
 /*Visited link */
 a:visited {
-  color: #EF7104; 
+  color: #FCEBE3; 
 }
