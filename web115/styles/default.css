@@ -11,6 +11,7 @@ h2 {
     text-align: left;
     font-family: "Vast Shadow", serif; 
     color: #692134;
+    letter-spacing: clamp(0.05em, 0.03em + 0.25vw, 0.2em);
     /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
 }
 h5 {
@@ -68,7 +69,7 @@ body {
   min-height: 100vh;  
   max-width: 900px ;
   margin: 0 auto; 
-  background-color: #AD1900;  
+  background-color: #a3386c;  
   font-family: "Jim Nightshade", Verdana;
   font-size: 23px;
   color: #F7F7F7
@@ -76,8 +77,8 @@ body {
 }
 
 .header-logo {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
   vertical-align: middle; /* Aligns image with the text middle */
   margin-right: 10px; 

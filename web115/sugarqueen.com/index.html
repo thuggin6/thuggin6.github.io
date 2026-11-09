@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugar Queen Business Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a3386c;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .business-card {
+      position: relative;
+      width: 100%;
+      max-width: 850px;
+      aspect-ratio: 1.75 / 1;
+      background: linear-gradient(135deg, #ffffE4 0%, #fffafd 100%);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .cupcake-watermark {
+      position: absolute;
+      left: 2%;
+      top: 10%;
+      height: 85%;
+      width: auto;
+      opacity: 0.14;
+      pointer-events: none;
+    }
+
+    .bottom-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 22%;
+      pointer-events: none;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2;
+      padding-left: 38%;
+      padding-top: 3.5%;
+      padding-right: 5%;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(28px, 4.4vw, 44px);
+      font-weight: bold;
+      color: #ea6f96;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-subtitle {
+      margin: 4px 0 26px 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(12px, 1.5vw, 16px);
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-item.address-item {
+      align-items: flex-start;
+    }
+
+    .icon-circle {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #ea6f96;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .address-item .icon-circle {
+      margin-top: 2px;
+    }
+
+    .contact-text {
+      font-size: clamp(14px, 2vw, 21px);
+      color: #111111;
+      font-weight: 400;
+    }
+
+    .address-text {
+      line-height: 1.38;
+    }
+
+    .tagline {
+      position: absolute;
+      bottom: 4.5%;
+      right: 4%;
+      z-index: 3;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(18px, 2.7vw, 30px);
+      font-weight: bold;
+      color: #7a233e;
+      letter-spacing: 0.3px;
+    }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="business-card">
+
+    <!-- Watermark Cupcake Graphic (Left) -->
+    <svg class="cupcake-watermark" viewBox="0 0 300 400" fill="#e5638b">
+      <!-- Simplified Frosting (Geometric Arc Cloud) -->
+      <path d="M 60,260 
+               A 45,45 0 0,1 50,170 
+               A 45,45 0 0,1 110,90 
+               A 55,55 0 0,1 200,90 
+               A 45,45 0 0,1 260,170 
+               A 45,45 0 0,1 250,260 Z" />
+      <circle cx="48" cy="145" r="7" />
+      <circle cx="242" cy="128" r="6" />
+      <circle cx="95" cy="242" r="8" fill="#ffffe4" />
+      <circle cx="155" cy="238" r="8" fill="#ffffe4" />
+      <circle cx="215" cy="242" r="8" fill="#ffffe4" />
+      <polygon points="62,285 248,285 222,385 88,385" />
+      <line x1="92" y1="285" x2="108" y2="385" stroke="#ffffe4" stroke-width="5" />
+      <line x1="124" y1="285" x2="132" y2="385" stroke="#ffffe4" stroke-width="5" />
+      <line x1="155" y1="285" x2="155" y2="385" stroke="#ffffe4" stroke-width="5" />
+      <line x1="186" y1="285" x2="178" y2="385" stroke="#ffffe4" stroke-width="5" />
+      <line x1="218" y1="285" x2="202" y2="385" stroke="#ffffe4" stroke-width="5" />
+    </svg>
+
+    <!-- Bottom Wavy Pink Banner -->
+    <svg class="bottom-wave" viewBox="0 0 1000 180" preserveAspectRatio="none">
+      <!-- Simplified Single-Curve Quadratic Beziers -->
+      <path d="M 0,40 Q 450,110 1000,40 L 1000,180 L 0,180 Z" fill="#f7c5d5" />
+      <path d="M 0,80 Q 500,140 1000,80 L 1000,180 L 0,180 Z" fill="#f27ba0" />
+    </svg>
+
+    <!-- Main Text Content -->
+    <div class="card-content">
+      <h1 class="brand-title">Sugar Queen</h1>
+      <p class="brand-subtitle">Owner/Baker: Terri Moore</p>
+
+      <div class="contact-list">
+        <!-- Email -->
+        <div class="contact-item">
+          <div class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffe4">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <span class="contact-text">theQueen@example.com</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-item">
+          <div class="icon-circle">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="#ffffe4">
+              <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
+          <span class="contact-text">(704) 1234-5678</span>
+        </div>
+
+        <!-- Website -->
+        <div class="contact-item">
+          <div class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffe4">
+              <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+            </svg>
+          </div>
+          <span class="contact-text">sugarqueen.com</span>
+        </div>
+
+        <!-- Address -->
+        <div class="contact-item address-item">
+          <div class="icon-circle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffe4">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+            </svg>
+          </div>
+          <div class="contact-text address-text">
+            <div>345 Callibridge Drive</div>
+            <div>Suite 300,</div>
+            <div>Charlotte, NC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Right Tagline -->
+    <div class="tagline">Slices of happiness</div>
+
+  </div>
+  
+</body>
+</html>
+
+
